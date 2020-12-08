@@ -24,14 +24,14 @@
 				</a>
 
 				<ul class="site-nav">
-					<li class="link-nav">
+					<li class="link-nav link-after">
 						<a href="./index.html" class="link current">Студия</a>
 					</li>
 					<li class="link-nav">
-						<a href="./portfolio.html" class="link">Портфолио</a>
+						<a href="./portfolio.html" class="link link-item">Портфолио</a>
 					</li>
 					<li class="link-nav">
-						<a href="#" class="link">Контакты</a>
+						<a href="#" class="link link-item">Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -61,7 +61,7 @@
 			<div class="container">
 				<div class="hero-heading">
 					<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-					<button type="button" class="hero-button">Заказать услугу</button>
+					<button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
 				</div>
 			</div>
 		</section>
@@ -74,7 +74,7 @@
 				<ul class="text-list">
 					<li class="text-item">
 						<div class="icon-spraite">
-							<svg width="65,32" height="70">
+							<svg width="65.32" height="70">
 								<use href="./svgsprite/spaite.svg#icon-antenna">
 								</use>
 							</svg>
@@ -443,6 +443,19 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Модалка -->
+	<div class="backdrop is-hidden" data-modal>
+		<div class="modal">
+			<button class="button" data-modal-close>
+				<svg class="button-svg" width="11" height="11">
+					<use href="./svgsprite/spaite.svg#icon-vector">
+					</use>
+				</svg>
+			</button>
+		</div>
+	</div>
+	<script src="./js/modal.js"></script>
 </body>
 
 </html>
